@@ -1,0 +1,145 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%) ;
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+}
+
+body{
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 1.4;
+    overflow: hidden;
+}
+
+.row{
+    width: 900px;
+    margin: 100px auto;
+
+    
+    
+    
+}
+
+.container{
+    margin: 100px auto;
+    width: 700px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+    border-radius: 10px;
+   
+}
+
+
+.items{
+    padding: 40px 25px;
+}
+
+
+
+.container .item-1{
+    background: var(--bright-orange);
+    height: 100%;
+   
+    border-radius: 15px 0  0 15px;
+    
+}
+
+.container .item-2{
+    background: var(--dark-cyan);
+    height: 100%;
+
+
+}
+
+.container .item-3{
+    background: var(--very-dark-cyan);
+    border-radius: 0 15px  15px 0;
+}
+
+.container h2{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.container p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 0.5px solid white;
+
+   
+
+}
+
+.btn-orange:hover{
+    background: var(--bright-orange);
+    opacity: 0.9;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-cyan:hover{
+    background: var(--dark-cyan);
+    opacity: 0.9;
+    color: white;
+}
+
+.dark-cyan:hover{
+    background: var(--very-dark-cyan);
+    opacity: 0.9;
+    border: 0.5px solid white;
+    color: white;
+}
+
+
+
+
+
+
+.btn-orange{
+    color: var(--bright-orange);
+}
+
+.btn-cyan{
+    color: var(--dark-cyan);
+}
+
+.dark-cyan{
+    color: var(--very-dark-cyan);
+}
+
+.attribution{
+   margin-bottom: 200px;
+   text-align: center;
+}
+
+@media(max-width: 768px){
+    .container{
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .container p{
+        line-height: 1.7;
+    }
+}
