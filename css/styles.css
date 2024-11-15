@@ -51,7 +51,6 @@ body{
 .container .item-1{
     background: var(--bright-orange);
     height: 100%;
-   
     border-radius: 15px 0  0 15px;
     
 }
@@ -134,12 +133,40 @@ body{
 }
 
 @media(max-width: 768px){
+
+    body{
+        overflow: scroll;
+    }
+
+    .row{
+        width: 500px;
+    }
     .container{
         flex-direction: column;
         width: 300px;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+        padding: 20px;
     }
 
     .container p{
         line-height: 1.7;
+        
     }
+
+    .row{
+        display: flex;
+
+    }
+
+    .container .item-1{
+        border-radius: 15px 15px 0 0;
+    }
+
+    .container .item-3{
+        border-radius: 0 0 15px 15px;
+    }
+
+    
 }
